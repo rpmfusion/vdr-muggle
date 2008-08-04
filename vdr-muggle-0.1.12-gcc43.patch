@@ -1,0 +1,140 @@
+Index: mugglei.c
+===================================================================
+--- mugglei.c	(revision 1137)
++++ mugglei.c	(working copy)
+@@ -8,6 +8,7 @@
+ // #define VERBOSE
+ 
+ #include <unistd.h>
++#include <cstring>
+ #include <string>
+ 
+ #include <stdlib.h>
+Index: mg_db_gd_sqlite.c
+===================================================================
+--- mg_db_gd_sqlite.c	(revision 1137)
++++ mg_db_gd_sqlite.c	(working copy)
+@@ -8,6 +8,7 @@
+  * \author  Responsible author: $Author: wolfgang61 $
+  */
+ 
++#include <cstring>
+ #include <string>
+ #include <sys/types.h>
+ #include <sys/stat.h>
+Index: mg_db.c
+===================================================================
+--- mg_db.c	(revision 1137)
++++ mg_db.c	(working copy)
+@@ -7,6 +7,7 @@
+  * \author  Responsible author: $Author: wolfgang61 $
+  */
+ 
++#include <cstring>
+ #include <string>
+ #include <assert.h>
+ 
+Index: mg_image_provider.c
+===================================================================
+--- mg_image_provider.c	(revision 1137)
++++ mg_image_provider.c	(working copy)
+@@ -11,6 +11,7 @@
+ #include <mpegfile.h>
+ #include <attachedpictureframe.h>
+ 
++#include <cstring>
+ #include <iostream>
+ #include <stdio.h>
+ #include <dirent.h>
+Index: mg_incremental_search.c
+===================================================================
+--- mg_incremental_search.c	(revision 1137)
++++ mg_incremental_search.c	(working copy)
+@@ -10,6 +10,8 @@
+  */
+ 
+ #include "mg_incremental_search.h"
++
++#include <cstring>
+ #include <iostream>
+ 
+ using namespace std;
+Index: mg_item.c
+===================================================================
+--- mg_item.c	(revision 1137)
++++ mg_item.c	(working copy)
+@@ -12,6 +12,7 @@
+ #include <unistd.h>
+ #include <fcntl.h>
+ #include <errno.h>
++#include <cstring>
+ 
+ #include "mg_item.h"
+ #include "mg_tools.h"
+Index: mg_setup.c
+===================================================================
+--- mg_setup.c	(revision 1137)
++++ mg_setup.c	(working copy)
+@@ -18,7 +18,9 @@
+ #include "mg_setup.h"
+ #include "mg_tools.h"
+ #include "mg_db.h"
++
+ #include <stdio.h>
++#include <cstring>
+ #include <string>
+ #include <getopt.h>
+ 
+Index: mg_valmap.c
+===================================================================
+--- mg_valmap.c	(revision 1137)
++++ mg_valmap.c	(working copy)
+@@ -1,8 +1,10 @@
+-#include <stdarg.h>
+-
+ #include "mg_valmap.h"
+ #include "mg_tools.h"
+ 
++#include <stdarg.h>
++#include <cstdlib>
++#include <cstring>
++
+ mgValmap::mgValmap(const char *key) {
+ 	m_key = key;
+ }
+Index: mg_selection.c
+===================================================================
+--- mg_selection.c	(revision 1137)
++++ mg_selection.c	(working copy)
+@@ -14,6 +14,7 @@
+ #include <sys/stat.h>
+ #include <stdio.h>
+ #include <assert.h>
++#include <cstring>
+ 
+ #include "mg_selection.h"
+ #include "mg_setup.h"
+Index: vdr_decoder_flac.c
+===================================================================
+--- vdr_decoder_flac.c	(revision 1137)
++++ vdr_decoder_flac.c	(working copy)
+@@ -10,6 +10,7 @@
+ 
+ #ifdef HAVE_FLAC
+ 
++#include <cstring>
+ #include <string>
+ #include <stdlib.h>
+ #include <stdio.h>
+Index: vdr_decoder_mp3.c
+===================================================================
+--- vdr_decoder_mp3.c	(revision 1137)
++++ vdr_decoder_mp3.c	(working copy)
+@@ -21,6 +21,7 @@
+ #include <sys/types.h>
+ #include <unistd.h>
+ #include <cmath>
++#include <cstring>
+ #include <iostream>
+ 
+ #include "vdr_config.h"
