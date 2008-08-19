@@ -2,6 +2,8 @@
 # - rpmbuild switches for using mysql/postgresql?
 # - move muggle.state* files away from /etc
 
+%define _default_patch_fuzz 2
+
 %define pname     muggle
 %define plugindir %(vdr-config --plugindir  2>/dev/null || echo ERROR)
 %define audiodir  %(vdr-config --audiodir   2>/dev/null || echo ERROR)
@@ -13,7 +15,7 @@
 
 Name:           vdr-muggle
 Version:        0.1.12
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        Media juggle plugin for VDR
 
 Group:          Applications/Multimedia
@@ -98,6 +100,9 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Tue Aug 19 2008 Thorsten Leemhuis <fedora [AT] leemhuis [DOT] info - 0.1.12-4
+- added _default_patch_fuzz define
+
 * Mon Aug 04 2008 Thorsten Leemhuis <fedora [AT] leemhuis [DOT] info - 0.1.12-3
 - rebuild
 
