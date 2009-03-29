@@ -15,7 +15,7 @@
 
 Name:           vdr-muggle
 Version:        0.1.12
-Release:        4%{?dist}
+Release:        5%{?dist}
 Summary:        Media juggle plugin for VDR
 
 Group:          Applications/Multimedia
@@ -100,6 +100,9 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Sun Mar 29 2009 Thorsten Leemhuis <fedora [AT] leemhuis [DOT] info> - 0.1.12-5
+- rebuild for new F11 features
+
 * Tue Aug 19 2008 Thorsten Leemhuis <fedora [AT] leemhuis [DOT] info - 0.1.12-4
 - added _default_patch_fuzz define
 
